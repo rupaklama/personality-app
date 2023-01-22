@@ -1,0 +1,48 @@
+.container {
+  max-width: 80rem;
+  margin: 2rem auto;
+  min-height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgba(159, 168, 145, 0.7);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  height: 7rem;
+  background-color: #d7bee0;
+  width: 100%;
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: 300;
+
+  padding: 2rem;
+  border-bottom: 1px solid rgb(167, 56, 8);
+}
+
+.main {
+  /* flex: 1; */
+  text-align: center;
+  padding: 2.5rem;
+
+  width: 100%;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  font-size: small;
+
+  width: 100%;
+  padding: 1rem;
+  min-height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
