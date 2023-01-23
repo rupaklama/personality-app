@@ -1,9 +1,9 @@
 const questions = [
-  { text: "I prefer to spend time alone rather than with others", value: "introvert" },
-  { text: "I am energized by being around others", value: "extrovert" },
-  { text: "I prefer small groups to large gatherings", value: "introvert" },
-  { text: "I enjoy being the center of attention", value: "extrovert" },
-  { text: "I am comfortable in unfamiliar social situations", value: "extrovert" },
+  { text: "I enjoy solitude", value: "introvert" },
+  { text: "I prefer one-on-one conversations to group activities", value: "introvert" },
+  { text: "I dislike conflict", value: "introvert" },
+  { text: "I often let calls go through to voicemail", value: "introvert" },
+  { text: "I enjoy work that allows me to 'dive in' with few interruptions", value: "introvert" },
 ];
 
 export default questions;

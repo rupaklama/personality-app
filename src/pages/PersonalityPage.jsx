@@ -11,16 +11,16 @@ const PersonalityPage = () => {
 
   const [result, setResult] = useState("");
 
-  let introvertScore = 0;
-  let extrovertScore = 0;
-
   const handleUserInput = (question, answer) => {
     setUserAnswer([...userAnswer, { question, answer }]);
   };
 
   const calculateScore = () => {
-    userAnswer.forEach(answer => {
-      if (answer.answer === "introvert") {
+    let introvertScore = 0;
+    let extrovertScore = 0;
+
+    userAnswer.forEach(({ answer }) => {
+      if (answer === "introvert") {
         introvertScore++;
       } else {
         extrovertScore++;
@@ -28,7 +28,7 @@ const PersonalityPage = () => {
     });
 
     if (introvertScore === extrovertScore) {
-      setResult("?... answer one more question");
+      setResult("🤔... Answer one more question");
     }
 
     if (introvertScore > extrovertScore) {
@@ -45,7 +45,7 @@ const PersonalityPage = () => {
       <h2 className={styles.heading}>Are you an introvert or an extrovert?</h2>
       {result && (
         <p className={styles.text}>
-          Your are <strong>{result}</strong>!
+          You are <strong>{result}</strong>!
         </p>
       )}
 
